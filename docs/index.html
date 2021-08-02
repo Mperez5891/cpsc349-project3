@@ -9,7 +9,7 @@
     </head>
     <body class="flex h-full flex-col bg-indigo-900 text-white justify-center items-center">
         <!-- Navbar -->
-        <header class="flex my-16 text-center justify-center">
+        <header class="flex mt-16 mb-8 lg:my-16 text-center justify-center">
             <h2 class="text-5xl text-center text-white">Stoopneggle</h2>
         </header>
 
@@ -21,9 +21,9 @@
                     <label class="row-start-1 my-2" for="username">Username: </label>
                     <label class="row-start-2 my-2" for="password">Password: </label>
                     <input class="row-start-1 text-black p-1 m-2 outline-none rounded-sm focus:bg-indigo-100"
-                    autocomplete="off" type="text" id="login-username" name="username" value="ProfAvery">       <!--DELETE DEFAULT LOGIN VALUES LATER-->
+                    autocomplete="off" type="text" id="login-username" name="username">
                     <input class="row-start-2 text-black p-1 m-2 outline-none rounded-sm focus:bg-indigo-100"
-                    autocomplete="off" type="password" id="login-password" name="password" value="password">
+                    autocomplete="off" type="password" id="login-password" name="password">
                     <div class="flex justify-center col-span-2 mt-4">
                         <button id="login-button" class="row-start-3 bg-blue-600 px-2 rounded-lg 
                         hover:bg-blue-700 transition duration-300">
@@ -70,10 +70,20 @@
                 </button>
             </div>
         </div>
-
-        <footer class="m-16 text-center">
-            <h2>Copyright @ 2021 CSUF Team 7</h2>
+            
+        <!-- Footer -->
+        <footer class="p-10 text-center">
+            <hr class="h-px bg-gray-600 border-none w-auto">
+            <h2 class="m-5">Copyright @ 2021 CSUF Team 7</h2>
+            <div class="flex flex-col lg:space-x-16 my-5 justify-center items-center text-center lg:justify-between lg:flex-row">
+                <div>
+                    <a href="home_timeline.html" class="text-xl font-bold">Stoopneggle</a>
+                </div>
+                <div class="flex mt-4 space-x-4 text-base lg:m-0">
+                    <a class="hover:text-gray-500 transition duration-300" href="about.html">About</a>
+                    <a class="hover:text-gray-500 transition duration-300" target="_blank" href="https://drive.google.com/file/d/1QZrSpKFQdVk3KfFoK6carHEKJtlG-8ve/view?usp=sharing">Wireframes</a>
+                </div>
+            </div>
         </footer>
-        <!-- <a href="about.html" class=""><img src="./images/logo.png" alt="The Beloved One"></a> -->
     </body>
 </html>
